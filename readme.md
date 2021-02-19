@@ -252,6 +252,8 @@ On Windows systems, SdFatConfig.h will be in Documents\Arduino\libraries\SdFat\s
 The ESP32 build doesn't yet support the analogWrite BDOS call.<br>
 The ESP32 build may require additional changes to the code to support different ESP32 boards.<br>
 The ESP32 build uses SPI mode for accessing the SD card.<br>
+Some ESP32 boards do not support SD card frequency more than 8Mhz (ie: AZDelivery NodeMCU ESP32 DevkitC v2). If you get `Unable to initialize SD card`, reduce clock frequency below 8Mhz. See `hardware/esp32/nodemcu32.h` example for details.<br>
+AI Thinker ESP32-CAM doesn't support yet SDFat library and needs SD_MMC to access its on-board SD card reader. I'm working on it.
 
 ## STM32 Limitations
 
