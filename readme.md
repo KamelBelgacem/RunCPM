@@ -1,3 +1,15 @@
+## Ahla wSahla wMarhaba!
+This fork intends to revive CP/M 2.2 using retro hardware and focuses mainly on:
+- ESP32-based boards as micro-controllers running CP/M 2.2 system (through RunCPM emulation)
+- Minitel/VideoTex as terminal (B&W CRT, 300-9600 bauds, 40/80 columns)
+- Dot Matrix printer
+
+I work on support for minitel specifics (keyboard and screen), for parallel/centronics printers and may be floppy disk drives (I said may be!).
+What it's important is that WiFi features be added, but only minimal ones (like storage/ftp) so that the old man stays connected. Yeah! I'm building a retro-computer!
+
+My contributions to the common line is usually on MockbaTheBorg's main Github repository.
+Welcome onboard!
+
 # RunCPM - Z80 CP/M 2.2 emulator
 
 RunCPM is an application which can execute vintage CP/M 8 bits programs on many modern platforms, like Windows, Mac OS X, Linux, FreeBSD, Arduino DUE and variants, like the Teensy or ESP32. It can be built both on 32 and 64 bits host environments and should be easily portable to other platforms.<br>
